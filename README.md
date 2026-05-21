@@ -1,6 +1,6 @@
 ## Nginx docker image
 
-This image is based on nginx build for Debian and is built on top of [clover/base](https://hub.docker.com/r/clover/base/).
+This image is based on nginx build for Debian and is built on top of [clover/common](https://hub.docker.com/r/clover/common/).
 
 ### Exposed ports
 
@@ -19,6 +19,7 @@ This image is based on nginx build for Debian and is built on top of [clover/bas
 | `PGROUP` | _not set_ | desired `PGID` group name
 | `CHOWN` | _not set_ | space-separated list of directories to change ownership to `PUID`/`PGID` during container startup
 | `CRON` | _not set_ (`0`) | will start _cron_ inside the container if set to `1`
+| `TZ` / `TIMEZONE` | _not set_ (`UTC`) | desired container timezone
 | `NGINX_DIRECTIVES` | `error_log /dev/stderr warn;` | any global-scope configuration directives
 
 ### Configuration files
